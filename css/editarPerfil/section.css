@@ -53,12 +53,11 @@ section>div:nth-child(1)>div img{
 }
 
 section>div:nth-child(2){
-    margin: 451px 30px 10px 30px;
+    margin: 451px 30px 0px 30px;
     width: 990px;
-    height: 90vh;
     padding-top: 25px;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     background-color: #d9eafc;
@@ -66,68 +65,113 @@ section>div:nth-child(2){
     text-shadow: 1px 1px 1px #083d4b;
 }
 
-section input{
-    border-radius: 2px;
-    border: 1px solid #40ac9a9a;
-    padding: 5px;
-    margin-left: 5px;
-    border-radius: 4px;
+section>div:nth-child(2) button{
+    border: none;
+    border-radius: 20%;
 }
 
-#calendar{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: gray;
-    font-size: 70%;
-}
-
-.inputs{
-    width: 80%;
-    height: 10%;
+.dados{
+    height: 45vh;
+    width: 75%;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column; 
+    justify-content: space-evenly;
     align-items: center;
-}
-
-.grande{
-    width: 30vw
-}
-
-.input{
-    width: 80%;
-    height: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-start;
-}
-
-.texto{
-    height: 120px;
-    width: 30vw;
-}
-
-.botaoAdd{
-    border-radius: 2px;
-    height: 20px;
-    border: none;
     background-color: white;
-    font-weight: bolder;
-    font-size: 12pt;
+    border: 2px solid black;
 }
 
-.atualizar{
-    width: 100%;
+.dados>div:nth-child(1){
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
 }
 
-.atualizar>button{
-    background-color: #4682B4;
-    border: none;
-    color: white;
-    border-radius: 4px;
-    padding: 10px;
+.dados>div:nth-child(1)>div:nth-child(1){
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
 }
+
+.dados>div:nth-child(1)>div:nth-child(2){
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 40%;
+}
+
+.dados>div:nth-child(2){
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.dados>div:nth-child(2)>div:nth-child(1){
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+}
+
+.dados>div:nth-child(2)>div:nth-child(2){
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+}
+
+.dados>div:nth-child(3){
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.dados>div:nth-child(3)>div:nth-child(1){
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 33%;
+}
+
+.dados>div:nth-child(3)>div:nth-child(2){
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 33;
+}
+
+.dados>div:nth-child(3)>div:nth-child(3){
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 33%;
+}
+
+.sobre{
+    margin:20px 0px;
+    height: 45vh;
+    width: 75%;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 2px solid black;
+}
+
+.sobre>div:nth-child(2){
+    display: flex;
+}
+
+.sobre>div:nth-child(2)>p{
+    font-size: 10pt;
+}
+
+
 
 @media (max-width: 978px){
 
