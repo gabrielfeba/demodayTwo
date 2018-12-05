@@ -1,0 +1,141 @@
+body>section{
+    margin-top: 70px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 1px 1px 1px #000000;
+
+}
+section>div:nth-child(1){
+    z-index: -1;
+    top: 70px;
+    width: 990px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    color: white;
+    background-color: rgb(211,211,211);
+    border: #40ac9a9a 1px solid;    
+}
+
+section>div:nth-child(1) img{
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    opacity: 0.4;
+}
+
+section>div:nth-child(1)>div{
+    z-index: 0;
+    margin-left: -380px;
+    width: 165px;
+    height: 190px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 225px;
+    color: white;
+    background-color: rgb(211,211,211);
+    border: #40a39367 3px solid;
+}
+section>div:nth-child(1)>div img{
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    opacity: 0.4;
+}
+
+section>div:nth-child(2){
+    margin: 451px 30px 10px 30px;
+    width: 990px;
+    height: 90vh;
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #d9eafc;
+    border: #40ac9a9a 1px solid;
+    text-shadow: 1px 1px 1px #083d4b;
+}
+
+section input{
+    border-radius: 2px;
+    border: 1px solid #40ac9a9a;
+    padding: 5px;
+    margin-left: 5px;
+    border-radius: 4px;
+}
+
+#calendar{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: gray;
+    font-size: 70%;
+}
+
+.inputs{
+    width: 80%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.grande{
+    width: 30vw
+}
+
+.input{
+    width: 80%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.texto{
+    height: 120px;
+    width: 30vw;
+}
+
+.botaoAdd{
+    border-radius: 2px;
+    height: 20px;
+    border: none;
+    background-color: white;
+    font-weight: bolder;
+    font-size: 12pt;
+}
+
+.atualizar{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.atualizar>button{
+    background-color: #4682B4;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+@media (max-width: 978px){
+
+    section>div:nth-child(1){
+        width: 100vw;
+    }
+
+    section>div:nth-child(2){
+        width: 100vw;
+    }
+}
