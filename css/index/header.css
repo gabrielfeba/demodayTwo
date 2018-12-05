@@ -1,0 +1,100 @@
+.logo > img{
+    width: 50px;
+    height: 50px;
+}
+
+.logo{
+    font-family: 'Cabin Sketch', cursive;
+    text-shadow: 1px 1px 1px #5F04B4;
+}
+
+a{
+    color: white;
+    text-shadow: 1px 1px 1px #111111;
+}
+
+a,button, input {
+    text-decoration: none;
+}
+a, button {
+    cursor: pointer;
+}
+header, .informacao button {
+    transition: .5s;    
+}
+header, .informacao button:hover {
+    transform: scale(1.08);
+}
+header{
+    z-index: 1;
+    display: flex;
+    padding: 0 8%;
+    justify-content: space-between;
+    align-content: center;
+    width: 84%;
+    height: 70px;
+    background-color: #5aaca6;
+    position: fixed;
+    top: 0;
+    color: white;
+    box-shadow: 0 0 5px 3px #000;
+}
+header>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+header>div>* {
+    margin: 0 1.0vh;
+}
+header input {
+    padding: 5px;
+    height: 17px;
+    width: 190px;
+    border-radius: 5px;
+    border: none;
+}
+header button {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    border: none;
+    background-color: #e93939;
+    color: white;
+    font-size: 16pt;
+}
+header>a {
+    position: absolute;
+    right: 12vw;
+    bottom: 0;
+}
+body>section:nth-child(2){
+    margin-top: 70px;
+    height: calc(100vh - 70px);
+    position: relative;
+}
+
+.slide2, .slide3, .slide4{
+    display: none;
+}
+.mae  img{
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+body>section:nth-child(2)>div:nth-child(2){
+    left: calc(50% - 40px);
+    bottom: 20px;
+    position: absolute;
+}
+
+.botoesNavegacao{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    border: none;
+}
