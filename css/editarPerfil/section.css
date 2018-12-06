@@ -14,11 +14,9 @@ section>div:nth-child(1){
     width: 990px;
     height: 450px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    color: white;
-    background-color: rgb(211,211,211);
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: sticky;
     border: #40ac9a9a 1px solid;    
 }
 
@@ -27,33 +25,43 @@ section>div:nth-child(1) img{
     height: 100%;
     width: 100%;
     position: absolute;
-    opacity: 0.4;
+}
+
+section>div:nth-child(1)>button{
+    margin: 0 8% 4% 0;
+    width: 100px;
+    height: 20px;
 }
 
 section>div:nth-child(1)>div{
-    z-index: 0;
-    margin-left: -380px;
+    right: 60%;
+    bottom: 5%;
     width: 165px;
     height: 190px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 225px;
-    color: white;
-    background-color: rgb(211,211,211);
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: relative;
     border: #40a39367 3px solid;
 }
+
+section>div:nth-child(1) div button{
+    margin: 0 6% 3% 0;
+    width: 65px;
+    height: 20px;
+    font-size: 7pt;
+}
+
+
 section>div:nth-child(1)>div img{
     z-index: -1;
     height: 100%;
     width: 100%;
     position: absolute;
-    opacity: 0.4;
 }
 
 section>div:nth-child(2){
-    margin: 451px 30px 0px 30px;
+    margin:  0px 30px 0px 30px;
     width: 990px;
     padding-top: 25px;
     display: flex;
@@ -67,7 +75,7 @@ section>div:nth-child(2){
 
 section>div:nth-child(2) button{
     border: none;
-    border-radius: 20%;
+    border-radius: 10px;
 }
 
 .dados{
@@ -157,18 +165,58 @@ section>div:nth-child(2) button{
     width: 75%;
     display: flex;
     flex-direction: column; 
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     background-color: white;
     border: 2px solid black;
 }
 
+.sobre h2{
+    font-size: 18pt;
+}
+
 .sobre>div:nth-child(2){
+    width: 100%;
+    height: 15vh;
     display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 
 .sobre>div:nth-child(2)>p{
-    font-size: 10pt;
+    margin-left: 30px;
+    font-size: 12pt;
+    width: 50%;
+}
+
+.sobre>div:nth-child(2)>button{
+    margin-left:15px;
+    width: 80px;
+    height: 20px;
+    margin-bottom: 10px;
+}
+
+.sobre>div:nth-child(4){
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 80%;
+    height: 10%;
+    background-color: #083d4b;
+    padding: 0px 5px;
+    border-radius: 4px;
+}
+
+.sobre>div:nth-child(4) p{
+    background-color: white;
+    border-radius: 20px;
+    padding: 0px 6px;
+}
+
+.sobre>div:nth-child(4) button{
+    color: white;
+    background-color: black;
+    margin-left: 10px;
 }
 
 
