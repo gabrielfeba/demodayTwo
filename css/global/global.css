@@ -5,7 +5,6 @@ section{
     display: flex;
     justify-content: space-evenly;
     margin: 100px 20px 10px; /* A margem 100px é para distancia o header */
-    min-height: calc(100% - 160px);
 }
 body {
     background-color: #5aaca6;
@@ -23,6 +22,7 @@ body {
     border-radius: 5px;
     padding: 0 20px;
     background-color: white;
+    margin-bottom: calc(100vh - 585px);
 }
 .perfil>* {/* pega todos os elementos dentro da div*/
     margin: 7px 0;
@@ -54,7 +54,7 @@ body {
 .tituloDeSangue {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
 }
 .tituloDeSangue>h1 {
@@ -92,7 +92,7 @@ body {
 .tituloDaVaga {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
 }
 .tituloDaVaga>img {
@@ -124,6 +124,15 @@ body {
     font-weight: bolder;
 }
 /*fim da formatação dos requisitos*/
+.tituloDoacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.tituloDoacao>h1 {
+    color: green;
+}
 .tituloDoacao>img {
     width: 125px;
     height: 100px;
