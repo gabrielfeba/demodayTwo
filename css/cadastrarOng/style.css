@@ -1,0 +1,90 @@
+body {
+    background-color: lightgray;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+}
+.header {
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 0 5px 3px #000;
+}
+table {
+    font-size: 1.3em;
+    border-spacing: 30px 10px;
+}
+table td:first-child{
+    text-align: right;
+    vertical-align: top;
+}
+table input[type="text"] {
+    width: 400px;
+}
+table input[type="text"], table input[type="date"] {
+    border-radius: 5px;
+    border: 1px solid black;
+    font-size: 1.1em;
+    padding: 5px 10px;
+}
+textarea {
+    width: 400px;
+    height: 200px;
+    border-radius: 5px;
+    font-size: 1.05em;
+    border: 1px solid black;
+}
+section>h2 {
+    margin: 50px;
+    font-size: 20pt;
+    color: orange;
+    text-shadow: 1px 1px #000;
+}
+.botaoCadastrar {
+    background-color: orange;
+    color: white;
+    font-size: 1.5em;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    margin: 20px 30px 50px;
+    box-shadow: 1px 1px #000;
+}
+.alert {
+    z-index: 3;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.alert>div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 4;
+    width: 500px;
+    height: 330px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #5aaca6;
+    text-align: center;
+    flex-direction: column;
+}
+.alert>div>h2 {
+    margin: 0;
+    color: white;
+}
+.alert>div>button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background: red;
+    font-size: 1.1em;
+}
