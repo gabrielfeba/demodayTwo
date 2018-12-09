@@ -1,0 +1,93 @@
+body section{
+    margin-top: 70px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 1px 1px 1px #000000;
+
+}
+section>div:nth-child(1){
+    top: 70px;
+    width: 990px;
+    height: 450px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    border: #40ac9a9a 1px solid;    
+}
+
+section>div:nth-child(1) img{
+    z-index: -1;
+    width: 990px;
+    height: 450px;
+    position: absolute;
+}
+
+section>div:nth-child(1)>button{
+    margin: 0 8% 4% 0;
+    width: 100px;
+    height: 20px;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    background-color: #e93939;
+    text-shadow: 1px 1px 1px black;
+    box-shadow: 1px 2px 1px #970a0a;
+}
+
+section>div:nth-child(1)>div{
+    right: 60%;
+    bottom: 5%;
+    width: 165px;
+    height: 190px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: relative;
+    border: #40a39367 3px solid;
+}
+
+section>div:nth-child(1) div button{
+    margin: 0 6% 3% 0;
+    width: 65px;
+    height: 20px;
+    font-size: 7pt;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    background-color: #e93939;
+    text-shadow: 1px 1px 1px black;
+    box-shadow: 1px 2px 1px #970a0a;
+}
+
+
+section>div:nth-child(1)>div img{
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+section>div:nth-child(2){
+    margin:  0px 30px 0px 30px;
+    width: 990px;
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #d9eafc;
+    border: #40ac9a9a 1px solid;
+    text-shadow: 1px 1px 1px #083d4b;
+}
+
+section>div:nth-child(2) button{
+    border: none;
+    border-radius: 4px;
+    color: white;
+    background-color: #e93939;
+    text-shadow: 1px 1px 1px black;
+    box-shadow: 1px 2px 1px #970a0a;
+}
