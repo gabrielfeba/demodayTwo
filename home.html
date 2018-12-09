@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="script/home.js" defer></script>
     <!-- links css -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/global/global.css">
@@ -12,7 +13,21 @@
     <link href="https://fonts.googleapis.com/css?family=Rosario" rel="stylesheet">
     <title>Help Easy</title>
 </head>
+
 <body>
+    <div class="alert">
+        <div>
+            <h2>Digite o e-mail da pessoa que deseja indicar:</h2>
+            <input type="text">
+            <button id="indicar">Indicar</button>
+        </div>
+    </div>
+    <div class="alertSangue">
+            <div>
+                <h2>Enviamos um email com os próximos passos. Obrigado por tomar essa iniciativa ^^</h2>
+                <button id="okay">Okay!</button>
+            </div>
+        </div>
     <header>
         <div class="logo">
             <img src="img/index/redes.png" alt="logoMarca">
@@ -35,21 +50,10 @@
             <p>Le para crianças, cuida de cachorros e tem disponibilidade de ensinar programação.</p>
         </div>
         <div class="feed">
-            <div class="feedItem" style="margin-top: 0px;"}> <!--Estou apenas desbugando a primeira feedItem para fica nivelado com o perfil-->
-                <div class="tituloDeSangue">
-                    <img src="img/global&home/sangue.jpg" alt="foto de sangue">
-                    <h1>TORNA-SE DOADOR DE SANGUE</h1>
-                    <div></div> <!--Essa div é para deixa o titulo no meio e o sangue no canto-->
-                </div>
+            <div class="filtro">
                 <p>
-                    <strong>Relato de doadores:</strong>
-                    <i>Senti-me como se estivesse em um filme, mas cada segundo era real. Percebi que o mundo é cheio de pessoas boas e ainda é possível acreditar na bondade do ser humano. Eu doei sangue sem plateia, sem fotógrafos ou cinegrafistas. Parecia um filme sim, mas cada um que estava lá era porque queria estar e não porque precisava ganhar algum dinheiro por isso. Tudo o que é feito de coração, o retorno é glorioso. Eu doei sangue para alguém que eu nem conheço, mas eu me sinto parte dessa pessoa. Onde quer que essa pessoa esteja, espero que seja muito feliz e que receba uma parte de mim que foi dada de coração. Eu gostaria de abraçar essa pessoa agora e dizer que vai ficar tudo bem e que a esperança existe sim. Mas eu não sei quem eu salvei, só sei que um pedaço meu existe em outro alguém e que esse alguém vai ter uma chance de viver, nem que seja só mais um dia.</i>
+                    <i>Fazer o filtro aqui dentro da classe filtro e mexer no css global, procure por filtro</i>
                 </p>
-                <div class="emailDeSangue">
-                    <h2>Quem começar a doar?</h2>
-                    <input type="text" placeholder="Deixe aqui seu e-mail para entramos em contado!">
-                    <button>></button>
-                </div>
             </div>
             <div class="feedItem">
                 <div class="tituloDaVaga">
@@ -69,7 +73,7 @@
                     <i>10/10/2010</i>
                 </p>
                 <div>
-                    <button class="buttonVaga" style="color: black;background-color: lightgray">INDICAR</button>
+                    <button class="buttonIndicar">INDICAR</button>
                     <button class="buttonVaga">VONLUTÁRIA-SE</button>
                 </div>
             </div>
@@ -91,7 +95,7 @@
                     <i>10/10/2010</i>
                 </p>
                 <div>
-                    <button class="buttonVaga" style="color: black;background-color: lightgray">INDICAR</button>
+                    <button class="buttonIndicar">INDICAR</button>
                     <button class="buttonVaga">VONLUTÁRIA-SE</button>
                 </div>
             </div>
@@ -108,7 +112,7 @@
                 <div class="emailDeSangue">
                     <h2>Quem começar a doar?</h2>
                     <input type="text" placeholder="Deixe aqui seu e-mail para entramos em contado!">
-                    <button>></button>
+                    <button class="buttonSangue">></button>
                 </div>
             </div>
             <div class="feedItem">

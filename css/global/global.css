@@ -1,12 +1,235 @@
+button:hover {
+    box-shadow: 1px 1px #000;
+}
 section{
-    width: 50px;
-    height: 100px;
     display: flex;
-    justify-content: flex-start;
-    background-color: aqua;
+    justify-content: space-evenly;
+    margin: 100px 20px 10px; /* A margem 100px é para distancia o header */
+}
+body {
+    background-color: #5aaca6;
+}
+/* inicio - bloco do perfil do usuario (canto superior esquerdo)*/
+.perfil {
+    width: 250px;
+    height: 420px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 0 20px;
+    background-color: white;
+}
+.perfil>* {/* pega todos os elementos dentro da div*/
+    margin: 7px 0;
+}
+.perfil>img{
+    width: 200px;
+    height: 225px;
+}
+/* fim - bloco do perfil  */
+
+
+
+/* inicio - feed (aonde vamos colocar doações, vagas, etc...) */
+.feed {
+    width: calc(85% - 250px);/* tirei 250px do bloco do perfil do usuario */
+}
+.feedItem {
+    width: 100%;
+    margin: 15px 0;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 20px;
+}
+.tituloDeSangue {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+.tituloDeSangue>h1 {
+    color: red;
+}
+.tituloDeSangue>img { 
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+}
+.emailDeSangue {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.emailDeSangue>h2 {
+    margin: 0 ; /* tudo h tem margin como padrão, apenas tirando.*/
+}
+.emailDeSangue>input {
+    width: 50%;
+    margin: 0 15px;
+    border-radius: 5px;
+    background-color: lightgray;
+    padding: 5px 10px;
+}
+.emailDeSangue>button {
+    border-radius: 50%;
+    background-color: red;
+    width: 30px;
+    height: 30px;
+    border: none;
 }
 
-div > img{
-    width: 200px;
-    height: 300px;
+
+.tituloDaVaga {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
 }
+.tituloDaVaga>img {
+    width: 125px;
+    height: 100px;
+    border-radius: 20px;
+}
+.tituloDaVaga>h1 {
+    color: orange;  
+}
+.buttonVaga {
+    height: 30px;
+    width: 150px;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.buttonIndicar {
+    height: 30px;
+    width: 150px;
+    background-color: lightgray;
+    color: black;
+    border: none;
+    border-radius: 5px;
+}
+.tituloDoacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+.tituloDoacao>h1 {
+    color: green;
+}
+.tituloDoacao>img {
+    width: 125px;
+    height: 100px;
+    border-radius: 20px;
+}
+.buttonDoacao {
+    height: 30px;
+    width: 150px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+/* fim - feed */
+/* inicio - filtro no feed */
+.filtro {
+    width: 100%;
+    margin-bottom: 15px;
+    border: 1px solid black;
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 20px;
+}
+/*Continue aqui... */
+
+/*fim - filtro no feed */
+
+/* inicio - alert */
+.alert {
+    z-index: 3;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.alert>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 4;
+    width: 500px;
+    height: 330px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #5aaca6;
+    flex-direction: column;
+}
+.alert>div>h2 {
+    margin: 0;
+}
+.alert>div>input {
+    margin: 20px 0;
+    width: 80%;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1.1em;
+}
+.alert>div>button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.1em;
+}
+/* fim - alert */
+/* inicio - alertSangue */
+.alertSangue {
+    z-index: 3;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.alertSangue>div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 4;
+    width: 500px;
+    height: 330px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #5aaca6;
+    text-align: center;
+    flex-direction: column;
+}
+.alertSangue>div>h2 {
+    margin: 0;
+}
+.alertSangue>div>button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background: red;
+    font-size: 1.1em;
+}
+/* fim - alertSangue */

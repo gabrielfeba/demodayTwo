@@ -1,0 +1,59 @@
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header {
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 0 5px 3px #000;
+}
+table {
+    font-size: 1.3em;
+    border-spacing: 30px 10px;
+}
+table td:first-child{
+    text-align: right;
+    vertical-align: top;
+}
+table input[type="text"] {
+    width: 400px;
+}
+table input[type="text"], table input[type="date"] {
+    border-radius: 5px;
+    border: none;
+    font-size: 1.1em;
+    padding: 5px 10px;
+}
+textarea {
+    width: 400px;
+    height: 200px;
+    border-radius: 5px;
+    font-size: 1.05em;
+}
+h2 {
+    margin: 50px;
+    font-size: 20pt;
+    color: #e93939;
+    text-shadow: 1px 1px #000;
+}
+table tr:last-child button {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+.conhecimentos input {
+    display: block;
+    margin-bottom: 10px;
+}
+.botaoCadastrar {
+    background-color: #e93939;
+    color: white;
+    font-size: 1.5em;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    margin: 20px 30px 50px;
+    box-shadow: 1px 1px #000;
+}

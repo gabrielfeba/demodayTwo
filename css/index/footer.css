@@ -8,7 +8,7 @@ footer {
     align-items: center;
 }
 
-footer > div{
+footer>div{
     width: 50vw;
     justify-self: flex-end;
     display: flex;

@@ -4,8 +4,15 @@ body{
     height: 100vh;
     overflow-x: hidden;
     font-family: 'Rosario', sans-serif;
+    background-color: #5aaca6;
 }
 
+button:focus, button:active, input:focus, input:active  {
+    outline: none;
+} /*^^ tirar aquelas bordinhas chata do botão e input*/
+button {
+    cursor: pointer;
+}
 a{
     color: white;
     text-decoration: none;
