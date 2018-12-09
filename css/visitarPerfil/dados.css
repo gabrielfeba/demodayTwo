@@ -1,0 +1,33 @@
+.dados{
+    width: 35%;
+    height: 70vh;
+    display: flex;
+    color:white;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 10px 0px;
+}
+
+.dados p{
+    text-align: left;
+    width: 100%;
+}
+
+.sobre{
+    width: 35%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    border-radius: 8px;
+    padding: 10px;
+    color: white;
+}
+
+.sobre p{
+    width: 100%;
+}
