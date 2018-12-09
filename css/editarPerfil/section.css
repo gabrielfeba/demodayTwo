@@ -1,7 +1,7 @@
 .comentarios{
     margin-bottom: 10px;
     width: 80%;
-    height: 450px;
+    height: 70vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
