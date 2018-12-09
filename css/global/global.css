@@ -119,15 +119,11 @@ body {
     border: none;
     border-radius: 5px;
 }
-.tituloDoacao {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
+/*formatação dos requisitos*/
+.negrito{
+    font-weight: bolder;
 }
-.tituloDoacao>h1 {
-    color: green;
-}
+/*fim da formatação dos requisitos*/
 .tituloDoacao>img {
     width: 125px;
     height: 100px;
