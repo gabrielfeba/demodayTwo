@@ -1,11 +1,11 @@
 .dados{
     height: 45vh;
-    width: 75%;
+    width: 80%;
     display: flex;
     flex-direction: column; 
     justify-content: space-evenly;
     align-items: center;
-    background-color: white;
+    background-color: #cbf0ed;
     border: 2px solid black;
     border-radius: 8px;
 }
@@ -21,13 +21,19 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 30%;
+    background-color: #ffffff;
+    border: 2px solid #5aaca6;
+    border-radius: 20px;
+    width: 35%;
 }
 
 .dados>div:nth-child(1)>div:nth-child(2){
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-color: #ffffff;
+    border: 2px solid #5aaca6;
+    border-radius: 20px;
     width: 40%;
 }
 
@@ -42,14 +48,19 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 50%;
+    background-color: #ffffff;
+    border: 2px solid #5aaca6;
+    border-radius: 20px;
+    width: 45%;
 }
-
 .dados>div:nth-child(2)>div:nth-child(2){
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 50%;
+    background-color: #ffffff;
+    border: 2px solid #5aaca6;
+    border-radius: 20px;
+    width: 35%;
 }
 
 .dados>div:nth-child(3){
@@ -63,19 +74,28 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 33%;
+    background-color: #ffffff;
+    border: 2px solid #5aaca6;
+    border-radius: 20px;
+    width: 30%;
 }
 
 .dados>div:nth-child(3)>div:nth-child(2){
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 33;
+    background-color: #ffffff;
+    border: 2px solid #5aaca6;
+    border-radius: 20px;
+    width: 30%;
 }
 
 .dados>div:nth-child(3)>div:nth-child(3){
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 33%;
+    background-color: #ffffff;
+    border: 2px solid #5aaca6;
+    border-radius: 20px;
+    width: 30%;
 }

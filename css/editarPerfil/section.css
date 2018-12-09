@@ -1,19 +1,19 @@
 .comentarios{
     margin-bottom: 10px;
-    width: 75%;
+    width: 80%;
     height: 450px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    background-color: white;
+    background-color: #cbf0ed;
     border: 2px solid black;
     border-radius: 8px;
 }
 
 .comentarios h2{
     width: 90%;
-    color: black;
+    color: white;
 }
 
 .comentario{
@@ -24,7 +24,8 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    border: 1px lightgrey solid;
+    background-color: rgb(255, 255, 255);
+    border: 1px rgb(179, 168, 168) solid;
     padding: 6px;
 }
 

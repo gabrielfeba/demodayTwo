@@ -1,12 +1,12 @@
 .sobre{
     margin:20px 0px;
-    height: 45vh;
-    width: 75%;
+    height: 55vh;
+    width: 80%;
     display: flex;
     flex-direction: column; 
     justify-content: space-evenly;
     align-items: center;
-    background-color: white;
+    background-color: #cbf0ed;
     border: 2px solid black;
     border-radius: 8px;
 }
@@ -16,17 +16,20 @@
 }
 
 .sobre>div:nth-child(2){
-    width: 100%;
-    height: 15vh;
+    width: 60%;
+    height: 20vh;
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    background-color: #ffffff;
+    border: 2px solid #5aaca6;
+    border-radius: 20px;
 }
 
 .sobre>div:nth-child(2)>p{
-    margin-left: 30px;
     font-size: 12pt;
-    width: 50%;
+    width: 70%;
+    height: 80%;
 }
 
 .sobre>div:nth-child(2)>button{
@@ -42,13 +45,15 @@
     align-items: center;
     width: 80%;
     height: 10%;
-    background-color: #083d4b;
+    background-color: #206477;
     padding: 0px 5px;
     border-radius: 4px;
 }
 
 .sobre>div:nth-child(4) p{
-    background-color: white;
+    margin-right: 6px;
+    background-color: #ffffff;
+    border: 2px solid #5aaca6;
     border-radius: 20px;
     padding: 0px 6px;
 }
