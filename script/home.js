@@ -1,3 +1,5 @@
+//lógica para o alert
+
 const botoesIndicar = document.querySelectorAll(".buttonIndicar");
 const botoesSangue = document.querySelectorAll(".buttonSangue");
 const alert = document.querySelector(".alert");
@@ -27,3 +29,44 @@ for(let item of botoesSangue) {
 }
 indicar.onclick = desaparecerAlert;
 okay.onclick = desaparecerAlertSangue;
+
+//lógica para o filtro
+
+const filtros = document.querySelectorAll(".filtros");
+const filtroVagas = filtros[0];
+const filtroSangue = filtros[1];
+const filtroDoacao = filtros[2];
+
+let vagas = document.querySelectorAll(".tituloDaVaga");
+let sangues = document.querySelectorAll(".tituloDeSangue");
+let doacoes = document.querySelectorAll(".tituloDoacao");
+
+// pegar o pai do titulo.
+function pegarPai(lista) {
+    let listaAuxiliar = [];
+    for(let i = 0; i < lista.length; i++) {
+        listaAuxiliar[i] = lista[i].parentNode;
+    }
+    return listaAuxiliar;
+}
+vagas = pegarPai(vagas);
+sangues = pegarPai(sangues);
+doacoes = pegarPai(doacoes);
+
+//filtrar
+function atualizar(filtro, lista) {
+    if(filtro.checked == true) {
+        for(let item of lista) {
+            item.style.display = "flex";
+        }
+    } else if(filtro.checked == false) {
+        for(let item of lista) {
+            item.style.display = "none";
+        }
+    }
+}
+setInterval(() => {
+    atualizar(filtroVagas, vagas);
+    atualizar(filtroSangue, sangues);
+    atualizar(filtroDoacao, doacoes);
+}, 300);

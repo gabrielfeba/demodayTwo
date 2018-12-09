@@ -5,6 +5,7 @@ section{
     display: flex;
     justify-content: space-evenly;
     margin: 100px 20px 10px; /* A margem 100px é para distancia o header */
+    min-height: calc(100% - 160px);
 }
 body {
     background-color: #5aaca6;
@@ -37,6 +38,7 @@ body {
 /* inicio - feed (aonde vamos colocar doações, vagas, etc...) */
 .feed {
     width: calc(85% - 250px);/* tirei 250px do bloco do perfil do usuario */
+    min-height: calc(100% - 120px);
 }
 .feedItem {
     width: 100%;
@@ -147,11 +149,10 @@ body {
     border: 1px solid black;
     background-color: lightgray;
     display: flex;
-    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
     padding: 20px 20px;
 }
-/*Continue aqui... */
 
 /*fim - filtro no feed */
 
